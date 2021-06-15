@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peoplesky"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+        
+        <ImageView 
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+        	android:contentDescription="@null"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/setting_list"/>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_ip"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F7F8F8"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:text="连接设置"
+            android:textColor="#A3A3A3"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_ip_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:contentDescription="@null"
+            android:src="@drawable/setting_ip_icon" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:contentDescription="@null"
+            android:src="@drawable/iv_right_arrow" />
+
+    </RelativeLayout>
+	
+</LinearLayout>

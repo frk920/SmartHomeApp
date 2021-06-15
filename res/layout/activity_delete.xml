@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/activity_register"
+    android:background="@drawable/register_bg">
+    
+     <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/default_icon"
+        android:contentDescription="@null"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/de_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/user_name_icon"
+        android:paddingLeft="8dp"
+        android:drawablePadding="10dp"
+        android:hint="请输入用户名"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/de_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/psw_icon"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+   
+
+    <Button
+        android:text="注销"
+        android:id="@+id/btn_delete"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/register_selector"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/iv_head"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@drawable/default_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+    
+    <EditText 
+        android:singleLine="true"
+        android:id="@+id/et_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/user_name_icon"
+        android:paddingLeft="8dp"
+        android:drawablePadding="10dp"
+        android:hint="请输入用户名"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+    
+    <EditText 
+        android:singleLine="true"
+        android:id="@+id/et_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/register_psw"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/psw_icon"
+        android:paddingLeft="8dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+    
+    <Button
+        android:text="登录"
+        android:id="@+id/btn_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/register_selector"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/tv_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="立即注册"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/><!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        
+        <TextView 
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="立即注销"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>
